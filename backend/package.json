@@ -1,0 +1,21 @@
+{
+  "name": "my-app",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "@iamsamiansari/blog-common": "^1.0.0",
+    "@prisma/client": "^6.16.3",
+    "@prisma/extension-accelerate": "^2.0.2",
+    "hono": "^4.9.10",
+    "prisma": "^6.16.3"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20251008.0",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.4.0"
+  }
+}
