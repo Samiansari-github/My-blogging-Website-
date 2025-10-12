@@ -23,6 +23,7 @@ export const useBlog = ({ id }: { id: string }) => {
             }
         })
             .then(response => {
+                console.log(response.data.blogs)
                 setBlog(response.data.blogs);
                 setLoading(false);
             })
@@ -45,6 +46,7 @@ export const useBlogs = () => {
             }
         })
             .then(response => {
+                console.log(response.data.blogs)
                 setBlogs(response.data.blogs);
                 setLoading(false);
             })
