@@ -23,7 +23,7 @@ export const useBlog = ({ id }: { id: string }) => {
             }
         })
             .then(response => {
-                setBlog(response.data.blog);
+                setBlog(response.data.blogs);
                 setLoading(false);
             })
     }, [id])
